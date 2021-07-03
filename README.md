@@ -7,7 +7,6 @@ The purpose of building this app is to help people who were not educated in the 
 ## Tech/framework used
 <b>Built with</b>
 - [HTML]
-- [CSS]
 - [JS]
 
 ## Installation
