@@ -1,0 +1,54 @@
+head, body {
+  text-align: center;
+}
+
+body {
+  background-image: url("study.jpg");
+  background-size: cover;
+  background-color: #dae4f5;
+}
+
+h1, h2 {
+  font-family: monospace;
+  letter-spacing: 2px;
+}
+
+h1 {
+  padding-top: 10%;
+}
+
+h2 {
+  padding-top: 20px;
+}
+
+p {
+  font-family: monospace;
+  font-size: 24px;
+  color: green;
+}
+
+form {
+  font-size: 22px;
+  padding-bottom: 2%;
+  font-family: cursive;
+}
+
+.box {
+  background: rgba(255, 255, 255, 0.71);
+  border: solid;
+  border-radius: 10px;
+  border-color: #666;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  padding-top: 3%;
+  padding-bottom: 10%;
+  margin-top: 4%;
+}
+
+#theinput, #submit {
+  margin-top: 20px;
+  line-height: 20px;
+  padding-left: 20px;
+  font-size: 18px;
+}

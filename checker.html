@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <link rel="stylesheet" href="checker.css">
+  <title>Grade Checker</title>
+  <div class="box">
+  <h1>Grade checker</h1>
+</head>
+<body>
+    <h2>Input your percentage number: </h2>
+  <form>
+      <input id="theinput" type="number" min="0" max="100" required>
+      <input id="submit" onclick="giveAnswer(document.getElementById('theinput').value)"
+      type="submit" value="Submit">
+  </form>
+    <p id="grade"></p>
+  <script>
+    function giveAnswer(input) {
+      const finalInput = document.getElementById('theinput').value;
+      const formValidity = document.getElementById("theinput").reportValidity();
+      event.preventDefault();
+      if (finalInput >= 70 && formValidity === true) {
+        document.getElementById('grade').innerHTML = "Your grade: 1st";
+        document.body.style.backgroundColor = "#70b865";
+      } else if (finalInput >= 60 && finalInput < 70 && formValidity === true) {
+        document.getElementById('grade').innerHTML = "Your grade: 2:1";
+        document.body.style.backgroundColor = "#f5f190";
+      } else if (finalInput >= 50 && finalInput < 60 && formValidity === true) {
+        document.getElementById('grade').innerHTML = "Your grade: 2:2";
+        document.body.style.backgroundColor = "#f2a31b";
+      } else if (finalInput < 50 && formValidity === true) {
+        document.getElementById('grade').innerHTML = "Your grade: 3rd or lower";
+        document.body.style.backgroundColor = "#f55b5b";
+      }
+    }
+  </script>
+</div>
+</body>
+</html>
